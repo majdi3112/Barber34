@@ -24,7 +24,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # enablement zet Pages bij de eerste run zelf aan, zodat er niets
+      # handmatig in Settings ingesteld hoeft te worden
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       # Statische site: de repo-root is meteen wat we publiceren
       - uses: actions/upload-pages-artifact@v3
