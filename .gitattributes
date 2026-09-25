@@ -1,0 +1,7 @@
+# Normaliseer regeleindes in de repo, ongeacht het besturingssysteem
+* text=auto eol=lf
+
+# Media nooit als tekst behandelen
+*.mp4 binary
+*.jpg binary
+*.png binary

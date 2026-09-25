@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barber SBX — Barbier in Lokeren | Have Some Confidence</title>
+<meta name="description" content="Barber SBX in Lokeren. StreetBarber, specialist in fades. Knippen op afspraak — Grote Kaai 9, 9160 Lokeren.">
+<meta name="theme-color" content="#141414">
+<link rel="canonical" href="https://majdi3112.github.io/Barber34/">
+
+<!-- Social previews need absolute URL's; pas deze aan bij een eigen domeinnaam -->
+<meta property="og:title" content="Barber SBX — Barbier in Lokeren">
+<meta property="og:description" content="StreetBarber in Lokeren. Knippen op afspraak. Have Some Confidence.">
+<meta property="og:image" content="https://majdi3112.github.io/Barber34/assets/img/hero-poster.jpg">
+<meta property="og:url" content="https://majdi3112.github.io/Barber34/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_BE">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141414'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='14' font-weight='700' fill='%23c9a45c' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <span class="loader__label">Barber SBX</span>
+    <div class="loader__bar"><i id="loaderFill"></i></div>
+    <span class="loader__pct" id="loaderPct">0%</span>
+  </div>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true"><span>bekijk</span></div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="header__wrap">
+    <a href="#hero" class="brand" aria-label="Barber SBX — naar boven">
+      <svg class="brand__icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6.5 3 14 14M17.5 3 10 14" />
+        <circle cx="7" cy="18.5" r="2.6"/><circle cx="17" cy="18.5" r="2.6"/>
+      </svg>
+      <span class="brand__text">Barber<em>SBX</em></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Hoofdmenu">
+      <a href="#hero" class="nav__link is-active">Home</a>
+      <a href="#about" class="nav__link">Over SBX</a>
+      <a href="#services" class="nav__link">Diensten</a>
+      <a href="#work" class="nav__link">Ons werk</a>
+      <a href="#booking" class="nav__link">Afspraak</a>
+      <a href="#location" class="nav__link">Locatie</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <a href="#booking" class="btn btn--sm btn--gold header__cta">Afspraak</a>
+
+    <button class="burger" id="burger" aria-label="Menu openen" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__media" id="heroMedia">
+    <video class="hero__video" id="heroVideo"
+           src="assets/video/hero.mp4"
+           poster="assets/img/hero-poster.jpg"
+           autoplay muted loop playsinline preload="auto"
+           aria-label="Barber SBX aan het werk in de shop"></video>
+    <div class="hero__scrim"></div>
+    <div class="grain" aria-hidden="true"></div>
+  </div>
+
+  <div class="hero__content">
+    <!-- emblem -->
+    <div class="emblem" id="emblem">
+      <span class="emblem__top">Lokeren &middot; België</span>
+      <svg class="emblem__scissors" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6.5 3 14 14M17.5 3 10 14"/>
+        <circle cx="7" cy="18.5" r="2.6"/><circle cx="17" cy="18.5" r="2.6"/>
+      </svg>
+      <h1 class="emblem__title"><span>Barber</span><span>SBX</span></h1>
+      <div class="emblem__ribbon"><span>Have Some Confidence</span></div>
+      <span class="emblem__est">@barber_sbx7</span>
+    </div>
+
+    <p class="hero__tagline">StreetBarber in Lokeren. Knippen op afspraak.</p>
+
+    <div class="hero__actions">
+      <a href="#booking" class="btn btn--gold">Maak een afspraak</a>
+      <a href="#work" class="btn btn--ghost">Bekijk ons werk</a>
+    </div>
+  </div>
+
+  <button class="sound-toggle" id="soundToggle" aria-label="Geluid aanzetten" data-muted="true">
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="sound-toggle__off"><path d="M4 9h3l4-3.5v13L7 15H4z"/><path d="m16 9 5 6M21 9l-5 6"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="sound-toggle__on"><path d="M4 9h3l4-3.5v13L7 15H4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12"/></svg>
+    <span class="sound-toggle__txt">Geluid</span>
+  </button>
+
+  <a href="#about" class="scroll-hint" aria-label="Scroll naar beneden">
+    <span>Scroll</span>
+    <i></i>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about section" id="about">
+  <div class="container about__grid">
+    <div class="about__text">
+      <svg class="icon-deco reveal" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6.5 3 14 14M17.5 3 10 14"/>
+        <circle cx="7" cy="18.5" r="2.6"/><circle cx="17" cy="18.5" r="2.6"/>
+      </svg>
+      <h2 class="h2 reveal">Wie wij zijn</h2>
+      <p class="reveal">Barber SBX is de shop van een 19-jarige barbier in Lokeren die het vak
+        van de straat af heeft opgebouwd. Geen ketting, geen haast, geen poespas &mdash;
+        gewoon scherp knipwerk in jouw eigen tijdslot.</p>
+      <p class="reveal">De specialiteit is de fade: van skin tot lengte, met lijnen die kloppen.
+        Elke knip krijgt de tijd die hij nodig heeft, en je gaat de deur uit met het gevoel
+        waar het hier om draait. <em>Have Some Confidence.</em></p>
+      <p class="signature reveal">SBX</p>
+
+      <div class="stats reveal">
+        <div class="stat"><b data-count="3000">0</b><span>Volgers op Instagram</span></div>
+        <div class="stat"><b data-count="5">0</b><span>Sterren gemiddeld</span></div>
+        <div class="stat"><b data-count="19">0</b><span>Jaar jong</span></div>
+      </div>
+    </div>
+
+    <figure class="about__figure reveal reveal--right">
+      <div class="about__frame" data-parallax="0.06">
+        <img src="assets/img/about-portrait.jpg" alt="Barber SBX aan het werk in de shop in Lokeren" loading="lazy" decoding="async">
+      </div>
+      <figcaption>Barber SBX &mdash; StreetBarber op de Grote Kaai in Lokeren.</figcaption>
+    </figure>
+  </div>
+
+  <!-- three value cards -->
+  <div class="container cards">
+    <article class="card reveal" style="--d:0ms">
+      <div class="card__media"><img src="assets/img/card-1.jpg" alt="Klant in de stoel bij Barber SBX" loading="lazy" decoding="async"></div>
+      <h3>Op afspraak</h3>
+      <p>Je kiest je moment en dat uur is voor jou alleen. Geen wachtrij, geen gehaaste knip.</p>
+    </article>
+    <article class="card reveal" style="--d:110ms">
+      <div class="card__media"><img src="assets/img/card-2.jpg" alt="Fade in de maak" loading="lazy" decoding="async"></div>
+      <h3>Fade specialist</h3>
+      <p>Skin fades, taper fades en scherpe lijnen. Dat is waar SBX elke dag het meeste van doet.</p>
+    </article>
+    <article class="card reveal" style="--d:220ms">
+      <div class="card__media"><img src="assets/img/card-3.jpg" alt="De shop van Barber SBX" loading="lazy" decoding="async"></div>
+      <h3>Vijf sterren</h3>
+      <p>Vaste klanten komen terug voor hetzelfde resultaat. Dat vertaalt zich in vijf sterren.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ OWN WORDS (video band) ============ -->
+<section class="band" id="words">
+  <div class="band__media">
+    <video class="band__video" src="assets/video/cut-2.mp4" poster="assets/img/cut-2-poster.jpg"
+           muted loop playsinline preload="none" data-lazyvideo aria-hidden="true"></video>
+    <div class="band__scrim"></div>
+  </div>
+
+  <div class="container band__content">
+    <h2 class="h2 h2--light reveal">In onze woorden</h2>
+
+    <div class="quotes" id="quotes" tabindex="0" role="region"
+         aria-label="Berichten van Barber SBX — sleep, scroll of gebruik de pijltjestoetsen">
+      <blockquote class="quote is-active">
+        <p>&ldquo;Have Some Confidence.&rdquo;</p>
+        <cite>@barber_sbx7</cite>
+      </blockquote>
+      <blockquote class="quote">
+        <p>&ldquo;Busy Day, Locked In.&rdquo;</p>
+        <cite>@barber_sbx7</cite>
+      </blockquote>
+      <blockquote class="quote">
+        <p>&ldquo;5-sterren kapper. StreetBarber uit Lokeren.&rdquo;</p>
+        <cite>@barber_sbx7</cite>
+      </blockquote>
+      <blockquote class="quote">
+        <p>&ldquo;Grote Kaai 9, Lokeren. Je weet waar je ons vindt.&rdquo;</p>
+        <cite>@barber_sbx7</cite>
+      </blockquote>
+    </div>
+
+    <div class="quotes__nav">
+      <button class="quotes__arrow" id="quotePrev" aria-label="Vorige">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <div class="quotes__dots" id="quoteDots" role="tablist" aria-label="Berichten"></div>
+      <button class="quotes__arrow" id="quoteNext" aria-label="Volgende">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+
+    <p class="quotes__hint" aria-hidden="true">Sleep, scroll of gebruik &larr; &rarr;</p>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services section" id="services">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="h2 reveal">Onze diensten</h2>
+      <p class="section__sub reveal">Alles wat je van een barbier verwacht, met de fade als specialiteit.</p>
+    </header>
+
+    <div class="services__grid">
+      <article class="service reveal" style="--d:0ms">
+        <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v4H7z"/><path d="M6 7h12l-1.1 12.2A2 2 0 0 1 14.9 21H9.1a2 2 0 0 1-2-1.8z"/><path d="M9 3V1.5M12 3V1.5M15 3V1.5"/></svg>
+        <h3>Skin Fade</h3>
+        <p>Van huid naar lengte zonder zichtbare overgang. De knip waar SBX het meest om gevraagd wordt.</p>
+      </article>
+
+      <article class="service reveal" style="--d:80ms">
+        <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6l4-12 4 12h4"/></svg>
+        <h3>Taper Fade</h3>
+        <p>Een zachtere opbouw in de nek en rond de oren, waarbij je bovenop je lengte houdt.</p>
+      </article>
+
+      <article class="service reveal" style="--d:160ms">
+        <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3 14 14M17.5 3 10 14"/><circle cx="7" cy="18.5" r="2.6"/><circle cx="17" cy="18.5" r="2.6"/></svg>
+        <h3>Knippen op schaar</h3>
+        <p>Klassiek schaarwerk voor wie lengte wil houden, met een coupe die in model blijft zitten.</p>
+      </article>
+
+      <article class="service reveal" style="--d:240ms">
+        <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h18v2.5a5.5 5.5 0 0 1-5.5 5.5h-7A5.5 5.5 0 0 1 3 12.5z"/><path d="M7 10V5.5M11 10V5.5M15 10V5.5M19 10V5.5"/></svg>
+        <h3>Baard &amp; lijnen</h3>
+        <p>Baard in model getrimd en de contouren scherp gezet, zodat je knip en baard op elkaar aansluiten.</p>
+      </article>
+
+      <article class="service reveal" style="--d:320ms">
+        <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="9" r="4.5"/><path d="M15 6.2a4.5 4.5 0 0 1 0 5.6M12.5 19.5c-.8-2.4-2-3.5-3.5-3.5s-2.7 1.1-3.5 3.5"/><path d="M15 16c1.5 0 2.7 1.1 3.5 3.5"/></svg>
+        <h3>Kinderknip</h3>
+        <p>Ook de kleintjes zitten hier goed. Rustig werken, kort houden en klaar voor school.</p>
+      </article>
+
+      <article class="service reveal" style="--d:400ms">
+        <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="8" width="10" height="13" rx="2"/><path d="M10 8V5a2 2 0 0 1 2-2h1M14 3l3 2-3 2"/></svg>
+        <h3>Styling &amp; advies</h3>
+        <p>Welke producten passen bij jouw haar en hoe je de coupe thuis terugkrijgt. Je vraagt het gewoon.</p>
+      </article>
+    </div>
+
+    <p class="services__note reveal">Prijzen vraag je in de shop of via een DM op Instagram.</p>
+  </div>
+</section>
+
+<!-- ============ WORK / REELS ============ -->
+<section class="work section" id="work">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="h2 reveal">Voorbeeld kapsels</h2>
+      <p class="section__sub reveal">Echt werk uit de shop, rechtstreeks van onze Instagram. De video&rsquo;s spelen automatisch &mdash; tik voor geluid en volledig beeld.</p>
+    </header>
+
+    <div class="reels">
+      <!-- 1 -->
+      <article class="reel reveal" style="--d:0ms" data-cursor>
+        <video class="reel__video" src="assets/video/cut-1.mp4" poster="assets/img/cut-1-poster.jpg"
+               muted loop playsinline preload="metadata" data-lazyvideo></video>
+        <div class="reel__shade"></div>
+        <button class="reel__open" data-lightbox="assets/video/cut-1.mp4" aria-label="Open video: Barber SBX">
+          <span class="reel__play" aria-hidden="true"></span>
+        </button>
+        <div class="reel__meta">
+          <h3>Barber SBX</h3>
+          <span>Fade, afgewerkt tot in de nek</span>
+        </div>
+        <span class="reel__badge">Reel</span>
+        <a class="reel__source" href="https://www.instagram.com/reel/DaWb79ZIOqP/" target="_blank"
+           rel="noopener noreferrer" aria-label="Bekijk deze reel op Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </article>
+
+      <!-- 2 -->
+      <article class="reel reveal" style="--d:110ms" data-cursor>
+        <video class="reel__video" src="assets/video/cut-2.mp4" poster="assets/img/cut-2-poster.jpg"
+               muted loop playsinline preload="metadata" data-lazyvideo></video>
+        <div class="reel__shade"></div>
+        <button class="reel__open" data-lightbox="assets/video/cut-2.mp4" aria-label="Open video: Have Some Confidence">
+          <span class="reel__play" aria-hidden="true"></span>
+        </button>
+        <div class="reel__meta">
+          <h3>Have Some Confidence</h3>
+          <span>Coupe op schaar met zijscheiding</span>
+        </div>
+        <span class="reel__badge">Reel</span>
+        <a class="reel__source" href="https://www.instagram.com/reel/DbVQjqko7jq/" target="_blank"
+           rel="noopener noreferrer" aria-label="Bekijk deze reel op Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </article>
+
+      <!-- 3 -->
+      <article class="reel reveal" style="--d:220ms" data-cursor>
+        <video class="reel__video" src="assets/video/hero.mp4" poster="assets/img/hero-poster.jpg"
+               muted loop playsinline preload="none" data-lazyvideo></video>
+        <div class="reel__shade"></div>
+        <button class="reel__open" data-lightbox="assets/video/hero.mp4" aria-label="Open video: Busy Day, Locked In">
+          <span class="reel__play" aria-hidden="true"></span>
+        </button>
+        <div class="reel__meta">
+          <h3>Busy Day, Locked In</h3>
+          <span>Een drukke dag in de shop</span>
+        </div>
+        <span class="reel__badge">Reel</span>
+        <a class="reel__source" href="https://www.instagram.com/reel/DcovY9_Iuk3/" target="_blank"
+           rel="noopener noreferrer" aria-label="Bekijk deze reel op Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </article>
+
+      <!-- 4: highlights (login-only op Instagram) -->
+      <article class="reel reel--link reveal" style="--d:330ms" data-cursor>
+        <img class="reel__img" src="assets/img/highlight-poster.jpg" alt="Instagram highlights van Barber SBX" loading="lazy" decoding="async">
+        <div class="reel__shade"></div>
+        <a class="reel__open" href="https://www.instagram.com/stories/highlights/17902915335296318/"
+           target="_blank" rel="noopener noreferrer" aria-label="Bekijk alle highlights op Instagram">
+          <span class="reel__ig" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </span>
+        </a>
+        <div class="reel__meta">
+          <h3>Alle highlights</h3>
+          <span>De volledige collectie op Instagram</span>
+        </div>
+        <span class="reel__badge reel__badge--ig">Instagram</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BAND 2 ============ -->
+<section class="band band--tall" id="everything">
+  <div class="band__media">
+    <video class="band__video" src="assets/video/cut-1.mp4" poster="assets/img/cut-1-poster.jpg"
+           muted loop playsinline preload="none" data-lazyvideo aria-hidden="true"></video>
+    <div class="band__scrim"></div>
+  </div>
+  <div class="container band__content band__content--left">
+    <h2 class="h2 h2--light reveal">Have Some Confidence</h2>
+    <p class="band__lead reveal">Je komt binnen zoals je bent en je gaat scherper de deur uit.
+      Dat is het hele idee achter Barber SBX.</p>
+    <a href="#booking" class="btn btn--gold reveal">Maak een afspraak</a>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="booking section" id="booking">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="h2 reveal">Een afspraak maken</h2>
+      <p class="section__sub reveal">Knippen gaat bij Barber SBX op afspraak. Zo regel je die in vier stappen.</p>
+    </header>
+
+    <ol class="steps">
+      <li class="step reveal" style="--d:0ms">
+        <span class="step__num">01</span>
+        <h3>Stuur een DM</h3>
+        <p>Afspraken lopen via Instagram. Stuur een bericht naar @barber_sbx7 en vermeld wat je wil laten doen.</p>
+      </li>
+      <li class="step reveal" style="--d:110ms">
+        <span class="step__num">02</span>
+        <h3>Kies je moment</h3>
+        <p>Geef door welke dag en welk uur jou past. SBX laat weten wat er nog vrij is in de agenda.</p>
+      </li>
+      <li class="step reveal" style="--d:220ms">
+        <span class="step__num">03</span>
+        <h3>Je krijgt bevestiging</h3>
+        <p>Zodra het uur vastligt, krijg je een bevestiging terug. Dat tijdslot is dan voor jou.</p>
+      </li>
+      <li class="step reveal" style="--d:330ms">
+        <span class="step__num">04</span>
+        <h3>Kom langs</h3>
+        <p>Op het afgesproken uur naar de Grote Kaai 9. Foto van het model dat je wil meenemen mag altijd.</p>
+      </li>
+    </ol>
+
+    <div class="booking__cta reveal">
+      <a class="btn btn--gold" href="https://www.instagram.com/barber_sbx7/" target="_blank" rel="noopener noreferrer">
+        Afspraak via Instagram
+      </a>
+      <p>Snel iets nodig? Vraag in je bericht naar het eerste vrije uur.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="location section" id="location">
+  <div class="container location__grid">
+    <div class="location__info">
+      <h2 class="h2 reveal">Locatie</h2>
+      <address class="reveal">
+        Barber SBX<br>
+        Grote Kaai 9<br>
+        9160 Lokeren, België
+      </address>
+
+      <div class="location__actions reveal">
+        <a class="btn btn--gold btn--sm" href="https://www.google.com/maps/search/?api=1&amp;query=Grote+Kaai+9,+9160+Lokeren,+Belgi%C3%AB"
+           target="_blank" rel="noopener noreferrer">Route openen</a>
+        <a class="btn btn--sm btn--dark" href="https://www.instagram.com/barber_sbx7/"
+           target="_blank" rel="noopener noreferrer">DM op Instagram</a>
+      </div>
+
+      <!-- TODO: echte openingsuren invullen zodra bekend -->
+      <ul class="hours reveal">
+        <li><span>Werkwijze</span><b>Op afspraak</b></li>
+        <li><span>Afspraak maken</span><b>Instagram DM</b></li>
+        <li><span>Openingsuren</span><b>Zie Instagram</b></li>
+      </ul>
+
+      <p class="location__note reveal">De vrije uren en drukke momenten zet SBX in zijn Instagram
+        stories. Wil je weten wanneer hij kan? Stuur een DM.</p>
+    </div>
+
+    <div class="location__map reveal reveal--right">
+      <iframe
+        src="https://www.google.com/maps?q=Grote+Kaai+9,+9160+Lokeren,+Belgi%C3%AB&amp;z=16&amp;output=embed"
+        title="Kaart met Barber SBX op Grote Kaai 9 in Lokeren"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="contact__head">
+      <h2 class="h2 h2--light reveal">Contact</h2>
+      <p class="reveal">Het snelste bereik je ons via Instagram. Daar staan ook de nieuwste knippen
+        en laat SBX weten wanneer hij in de shop staat.</p>
+    </div>
+
+    <div class="tiles">
+      <a class="tile reveal" style="--d:0ms" href="https://www.instagram.com/barber_sbx7/"
+         target="_blank" rel="noopener noreferrer">
+        <svg class="tile__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+        <h3>Stuur een DM</h3>
+        <p>@barber_sbx7 &mdash; hier maak je je afspraak en stel je vragen over prijzen.</p>
+        <span class="tile__go">Instagram openen</span>
+      </a>
+
+      <a class="tile reveal" style="--d:110ms" href="https://www.google.com/maps/search/?api=1&amp;query=Grote+Kaai+9,+9160+Lokeren,+Belgi%C3%AB"
+         target="_blank" rel="noopener noreferrer">
+        <svg class="tile__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <h3>Grote Kaai 9</h3>
+        <p>9160 Lokeren, België. Open de route in Google Maps.</p>
+        <span class="tile__go">Route openen</span>
+      </a>
+
+      <a class="tile reveal" style="--d:220ms" href="#booking">
+        <svg class="tile__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 5V3m8 2V3"/><path d="m9.5 14.5 1.8 1.8 3.4-3.6"/></svg>
+        <h3>Afspraak maken</h3>
+        <p>Vier stappen en je tijdslot staat vast. Zo werkt de agenda van SBX.</p>
+        <span class="tile__go">Hoe het werkt</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="#hero" class="brand brand--footer">
+        <svg class="brand__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6.5 3 14 14M17.5 3 10 14"/>
+          <circle cx="7" cy="18.5" r="2.6"/><circle cx="17" cy="18.5" r="2.6"/>
+        </svg>
+        <span class="brand__text">Barber<em>SBX</em></span>
+      </a>
+      <p class="footer__tag">StreetBarber in Lokeren &mdash; Have Some Confidence.</p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footermenu">
+      <a href="#about">Over SBX</a>
+      <a href="#services">Diensten</a>
+      <a href="#work">Ons werk</a>
+      <a href="#booking">Afspraak</a>
+      <a href="#location">Locatie</a>
+    </nav>
+
+    <div class="footer__social">
+      <a href="https://www.instagram.com/barber_sbx7/" target="_blank" rel="noopener noreferrer" aria-label="Instagram van Barber SBX">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Grote+Kaai+9,+9160+Lokeren,+Belgi%C3%AB" target="_blank" rel="noopener noreferrer" aria-label="Route naar de shop">
+        <svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer__bottom container">
+    <span>&copy; <span id="year">2026</span> Barber SBX &mdash; Grote Kaai 9, 9160 Lokeren.</span>
+    <span>Have Some Confidence</span>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Video" hidden>
+  <button class="lightbox__close" id="lightboxClose" aria-label="Sluiten">&times;</button>
+  <div class="lightbox__stage">
+    <video id="lightboxVideo" controls playsinline loop></video>
+  </div>
+</div>
+
+<button class="to-top" id="toTop" aria-label="Terug naar boven">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
